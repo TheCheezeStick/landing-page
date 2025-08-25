@@ -11,37 +11,38 @@ body {
 
 .header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 18px 120px;
     background-color: #1F2937;
     color: #f9faf8;
     font-size: 24px;
     border-bottom: 4px solid #273346
 }
 
-.header-logo {
+.header-content {
     display: flex;
     justify-content: center;
-    /* margin-left: auto;
-    margin-right: auto; */
-    flex-grow: 0;
-    padding: 4px 0px;
-    outline: none red 3px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 18px auto;
+    width: 75%;
+    padding: 4px;
+}
+
+.header-logo {
+    display: flex;
+    padding-right: 4px;
 }
 
 .header-links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-grow: 0;
+    flex-wrap: nowrap;
+    flex: 1;
     column-gap: 18px;
     margin: 0;
     padding: 0;
     list-style: none;
-    outline: none green 3px;
 }
 
 .header-links a {
@@ -58,53 +59,56 @@ body {
     outline: 4px solid #273346;
 }
 
+.list-spacer {
+    display: flex;
+    margin-right: auto;
+    background-color: blue;
+}
+
 /* end of header styling */
-/* YOU SHOULD MAKE A DIV AROUND THE TEXT AND IMAGE SEPARATE FROM THE BODY-ONE DIV SO YOU CAN SET LEFT AND RIGHT MARGINS. DO THIS ON THE ENTIRE PAGE TO GET AUTO MARGINS THAT STAY CONSISTENT THE WHOLE TIME. NEED TO DECIDE A FIXED CONTENT WIDTH TO MAKE EACH SECTION THE SAME */
+
 .body-one {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 48px;
-    /* padding: 120px; */
+    justify-content: center;
+    align-items: center;
     background-color: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
-    outline: 3px solid red;
 }
 
 .body-one-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    outline: 4px solid hotpink;
+    flex-grow: 1;
+    column-gap: 72px;
+    row-gap: 32px;
     margin: 120px auto;
+    max-width: 75%;
 }
 
 .body-one-text {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 350px;
-    min-width: 200px;
-    outline: solid green 3px;
+    flex-grow: 10;
+    width: 450px;
 }
 
 h1 {
     color: #f9faf8;
     font-size: 48px;
     font-weight: 900;
-    padding: 0;
     margin: 0;
-}
-
-.body-one-text > p {
-
+    padding: 0;
 }
 
 button {
     display: flex;
-    width: 120px;
     justify-content: center;
     align-items: center;
+    width: 120px;
     margin: 0;
     padding: 6px 24px;
     background-color: #3882F6;
@@ -126,10 +130,87 @@ button:active {
 
 .body-one-img {
     display: flex;
-    justify-content: flex-end;
-    align-self: flex-start;
-    width: 500px;
+    width: 450px;
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+}
+
+/* end of body 1 */
+
+.body-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-two-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 48px auto 120px auto;
+    max-width: 75%;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    margin: 0 0 48px 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #1F2937;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    column-gap: 48px;
+    text-align: center;
+    font-size: 18px;
+    color: #1F2937;
+}
+
+.container-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 220px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 48px;
+}
+
+.container-item > img {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    outline: #3882F6 4px solid;
+}
+
+/* end of body 2 */
+
+.body-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
 }
