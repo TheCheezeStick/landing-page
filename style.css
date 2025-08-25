@@ -33,12 +33,14 @@ body {
 .header-logo {
     display: flex;
     padding-right: 4px;
+    flex-grow: 9999;
 }
 
 .header-links {
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
-    flex: 1;
+    flex-grow: 1;
     column-gap: 18px;
     margin: 0;
     padding: 0;
@@ -57,12 +59,6 @@ body {
     background-color: #273346;
     outline-width: 3px;
     outline: 4px solid #273346;
-}
-
-.list-spacer {
-    display: flex;
-    margin-right: auto;
-    background-color: blue;
 }
 
 /* end of header styling */
