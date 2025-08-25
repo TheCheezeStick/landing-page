@@ -304,3 +304,15 @@ h2 {
 
 /* end of body four */
 
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 36px 0;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+}
